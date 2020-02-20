@@ -21,7 +21,7 @@ public class T6Ej6_GIT {
         String diasSemana[]={"lunes","martes","miercoles","jueves","viernes","sabado","domingo"};
         double suma = 0;
         boolean practica = false;
-        int dia;
+        int dia,opc;
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
@@ -40,6 +40,15 @@ public class T6Ej6_GIT {
             dia = sc.nextInt();
         } while (dia<1 || dia>7);
         
+        do{
+        System.out.println("¿Quieres seguir modificando? (1.SI / 2.NO)");
+        opc= sc.nextInt();
+        if(opc==1){
+            System.out.println("Puedes seguir modificando el programa");
+        }else{
+            System.out.println("Ya no puedes seguir modificando el programa");
+        }
+        }while(opc!=2);
         System.out.println("La temperatura fue "+ temperaturas[dia-1] );
     }
     
