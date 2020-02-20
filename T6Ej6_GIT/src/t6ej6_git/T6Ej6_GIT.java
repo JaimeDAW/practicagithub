@@ -20,6 +20,7 @@ public class T6Ej6_GIT {
         double temperaturas[] = new double[7];
         String diasSemana[]={"lunes","martes","miercoles","jueves","viernes","sabado","domingo"};
         double suma = 0;
+        boolean practica = false;
         int dia;
         Scanner sc = new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
